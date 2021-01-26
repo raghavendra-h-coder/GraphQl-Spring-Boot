@@ -1,0 +1,15 @@
+schema{
+	query:Query
+}
+
+type Query{
+	allEmailsLog:[EmailsLog]
+	emailsLog(id:Int):EmailsLog
+}
+
+type EmailsLog{
+	jobId:Int
+	candidateId:Int
+	emailType:String
+	email: String
+}
